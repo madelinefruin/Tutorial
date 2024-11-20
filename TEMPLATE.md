@@ -1,9 +1,10 @@
 ---
-title: My Super Awesome Tutorial
-date: 1970-01-01
+title: Battery Indicator with ESP32
+date: 2024-11-20
 authors:
-  - name: John Doe
-  - name: Mary Jane
+  - name: Andy Tu
+  - name: Madeline Fruin
+  - name: Will Luong
 ---
 
 ![relevant graphic or workshop logo](image/path)
@@ -14,11 +15,14 @@ Write a short section on what the tutorial is aiming to accomplish.
 What is the motivation behind the tutorial?
 What do you want readers to gain from the tutorial?
 
+This tutorial will teach readers how to use ESP32's ADC pins to measure a battery's charge. Since the ADC pins can take in a max of 3.3V, we will be covering how to implement a voltage divider to lower the maximum voltage of a battery to an amount allowed by the ESP32. For the coding section, we will use the Arduino IDE to write code that will read, display, and convert the battery readings to a charge percentage using a custom library.
+
 ### Learning Objectives
 
-- Bullet list of skills/concepts to be covered
-
-Any additional notes from the developers can be included here.
+- Voltage Dividers
+- ESP32 ADC/GPIO Pins
+- Arduino C
+- Battery Charge State
 
 ### Background Information
 
@@ -53,13 +57,17 @@ List your required hardware components and the quantities here.
 
 | Component Name | Quanitity |
 | -------------- | --------- |
-|                |           |
-|                |           |
+|     ESP32      |     1     |
+|Resistors (47kΩ)|     2     |
+| 18650 Battery  |     1     |
+| Battery Holder |     1     |
+|  Breadboard    |     1     |
+| Jumper Cables  |     2     |
+
 
 ### Required Tools and Equipment
 
-List any tools and equipment you need here.
-(Ex, computer, soldering station, etc.)
+Computer, Arduino IDE, Cable to connect ESP32 to your computer
 
 ## Part 01: Name
 
