@@ -47,7 +47,7 @@ customize these for each workshop.
 
 You will receive an ESP32 board and USB-C to USB-C connector cable. The ESP32 is (INSERT BASIC DESCRIPTION HERE). We will be using it very simply, you do not need to understand everything it can do for this tutorial.
 
-We will be using the Arduino IDE. If you don't have it already, download it <here href="https://www.arduino.cc/en/software">. 
+We will be using the Arduino IDE. If you don't have it already, download it <a href="https://www.arduino.cc/en/software"><here>. 
 
 ### Required Downloads and Installations
 
