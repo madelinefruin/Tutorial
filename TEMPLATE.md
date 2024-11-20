@@ -33,27 +33,13 @@ Include (and cite if needed) any visuals that will help the audience understand.
 
 ## Getting Started
 
-For any software prerequisites, write a simple excerpt on each
-technology the participant will be expecting to download and install.
-Aim to demystify the technologies being used and explain any design
-decisions that were taken. Walk through the installation processes
-in detail. Be aware of any operating system differences.
-For hardware prerequisites, list all the necessary components that
-the participant will receive. A table showing component names and
-quantities should suffice. Link any reference sheets or guides that
-the participant may need.
-The following are stylistic examples of possible prerequisites,
-customize these for each workshop.
-
 You will receive an ESP32 board and USB-C to USB-C connector cable. The ESP32 is (INSERT BASIC DESCRIPTION HERE). We will be using it very simply, you do not need to understand everything it can do for this tutorial.
 
-We will be using the Arduino IDE.  
+You will also receive a breadboard, jumper cables, and resistors. The rows of the breadboard are connected while the columns are not. The resistors and jumper cables should fit snuggly into the holes of the breadboard. 
+
+We will be using the Arduino IDE (Integrated Development Environment). This is a free, open source program that allows users to write code and upload it to boards. 
 
 ### Required Downloads and Installations
-
-List any required downloads and installations here.
-Make sure to include tutorials on how to install them.
-You can either make your own tutorials or include a link to them.
 
 If you don't have the Arduino IDE already, download it <a href="https://www.arduino.cc/en/software"><here>here.</a>
 
@@ -85,8 +71,8 @@ In this section, we will be discussing the voltage divider and circuit setup. We
 
 ### Objective
 
-- To understand how to pick values for a voltage divider
-- How to properly connect the battery, resistors, and ESP32.
+- Understand how to pick values for a voltage divider.
+- Understand how to properly connect the battery, resistors, and ESP32.
 
 ### Background Information
 
@@ -111,12 +97,13 @@ Teach the contents of this section
 
 ### Introduction
 
-In this section, we will be discussing the voltage divider and circuit setup. We will not be writing any code, so a computer is not needed yet.
+In this section, we will be discussing the code used to measure the battery's percentage. 
 
 ### Objective
 
-- To understand how to pick values for a voltage divider
-- How to properly connect the battery, resistors, and ESP32.
+- Understand the Arduino interface.
+- Understand how to assign pin numbers in Arduino.
+- Understand how to implement functions in Arduino.
 
 ### Background Information
 
@@ -127,11 +114,9 @@ about the technical skills
 
 ### Components
 
-- Breadboard
-- Battery and Battery Holder
-- Resistors
 - ESP32
-- Jumper Cables
+- USB-C to USB-C Connector cable for ESP32
+- Your Computer
 
 ### Instructional
 
