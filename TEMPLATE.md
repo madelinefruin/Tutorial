@@ -55,7 +55,7 @@ List your required hardware components and the quantities here.
 
 ### Required Tools and Equipment
 
-Computer, Arduino IDE, Cable to connect ESP32 to your computer
+Computer, Arduino IDE
 
 ## Part 01: Setting up the Circuit
 
@@ -74,6 +74,9 @@ Give a brief explanation of the technical skills learned/needed
 in this challenge. There is no need to go into detail as a
 separation document should be prepared to explain more in depth
 about the technical skills
+
+A voltage divider is a passive linear circuit made up of two resistors, although sometimes more are used to get a specific resistance value. 
+<img src = "voltagedivider.png" alt="Voltage Divider Schematic and Equation">
 
 ### Components
 
