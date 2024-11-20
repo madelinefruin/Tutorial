@@ -78,7 +78,7 @@ about the technical skills
 If you've taken a look at the battery we gave you, you might notice that it says 3.7V on it. The maximum voltage input for the ESP32 is 3.3V, so we need to find a way to decrease the voltage from the battery, we can do this with a <b>voltage divider</b>.
 
 A voltage divider is a passive linear circuit made up of two resistors, although sometimes more are used to get a specific resistance value. 
-<img src = "voltagedivider.png" alt="Voltage Divider Schematic and Equation">
+<img src = "voltagedivider.png" alt="Voltage Divider Schematic and Equation"> </img>
 
 We have given you two 47kΩ resistors, so the output voltage will be 3.7V * 47kΩ/(47kΩ + 47kΩ) = 1.85V. 
 
@@ -93,7 +93,7 @@ We have given you two 47kΩ resistors, so the output voltage will be 3.7V * 47k�
 ### Instructional
 
 Assemble the circuit as shown in the below image. 
-<img src="Fritz.png" alt="Circuit Fritz">
+<img src="Fritz.png" alt="Circuit Fritz"> </img>
 Make sure to attach the cathode of the battery to the voltage divider *AND* to the ground pin of the ESP32!
 
 ## Part 02: Writing the Code
