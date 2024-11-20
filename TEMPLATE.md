@@ -11,11 +11,7 @@ authors:
 
 ## Introduction
 
-Write a short section on what the tutorial is aiming to accomplish.
-What is the motivation behind the tutorial?
-What do you want readers to gain from the tutorial?
-
-This tutorial will teach readers how to use ESP32's ADC pins to measure a battery's charge. Since the ADC pins can take in a max of 3.3V, we will be covering how to implement a voltage divider to lower the maximum voltage of a battery to an amount allowed by the ESP32. For the coding section, we will use the Arduino IDE to write code that will read, display, and convert the battery readings to a charge percentage using a custom library.
+This tutorial will teach readers how to use ESP32's ADC pins to measure a battery's charge. Since the ADC pins can take in a max of 3.3V, we will be covering how to implement a voltage divider to lower the maximum voltage of a battery to an amount allowed by the ESP32. For the coding section, we will use the Arduino IDE to write code that will read, display, and convert the battery readings to a charge percentage using a function.
 
 ### Learning Objectives
 
@@ -42,8 +38,6 @@ We will be using the Arduino IDE (Integrated Development Environment). This is a
 ### Required Downloads and Installations
 
 If you don't have the Arduino IDE already, download it <a href="https://www.arduino.cc/en/software"><here>here.</a>
-
-You will also need to install the Pangodream Arduino Library. This can be found in the lefthand bar of your Arduino IDE under add-ons. Or, you can download it <a href="https://github.com/pangodream/18650CL"><here>here.</a>
 
 ### Required Components
 
@@ -135,6 +129,18 @@ Present the example here. Include visuals to help better understanding
 ### Analysis
 
 Explain how the example used your tutorial topic. Give in-depth analysis of each part and show your understanding of the tutorial topic
+
+## Challenge Questions
+
+How would this change if we were using a 4.2V 18650 battery? Would you need to change either of the values of the voltage divider or just the code? 
+
+What about a 12V battery?
+
+### Challenge Answers
+
+We would not need to change the voltage divider for a 4.2V battery because 4.2V/2 is 2.1V, which is under the maximum that the board can take in. We would only need to change the code to the full charge and dead voltage values of the 4.2V battery.
+
+We would need to change the voltage divider for a 12V battery because 12V/2 is 6V, which is nearly double what the board can take in!
 
 ## Additional Resources
 
