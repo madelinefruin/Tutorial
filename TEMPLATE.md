@@ -130,6 +130,8 @@ Teach the contents of this section
   const float referenceVoltage = 3.3;
   const int resolution = 3950;
   const float voltageDividerRatio = 2.0;
+  const float maxBatt = 4.2;
+  const float minBatt = 3;
 </code></pre>
 
 <pre><code class = "language-arduino"> //Function to calculate battery voltage
@@ -156,7 +158,7 @@ Teach the contents of this section
     Serial.print(batteryVoltage);
     Serial.println(" V");
 
-    int battPercent = (batteryVoltage/4.2)*100;
+    int battPercent = ((batteryVoltage-minBatt)/(maxBatt-minBatt))*100;
     Serial.print("Battery Percentage: ");
     Serial.print(batteryPercent);
     Serial.println(" %");
