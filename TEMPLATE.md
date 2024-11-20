@@ -55,9 +55,9 @@ List any required downloads and installations here.
 Make sure to include tutorials on how to install them.
 You can either make your own tutorials or include a link to them.
 
-If you don't have the Arduino IDE already, download it <a href="https://www.arduino.cc/en/software"><here>here.
+If you don't have the Arduino IDE already, download it <a href="https://www.arduino.cc/en/software"><here>here.</a>
 
-You will also need to install the Pangodream Arduino Library. This can be found in the lefthand bar of your Arduino IDE under add-ons. Or, you can download it <b href="https://github.com/pangodream/18650CL"><here>here.
+You will also need to install the Pangodream Arduino Library. This can be found in the lefthand bar of your Arduino IDE under add-ons. Or, you can download it <b href="https://github.com/pangodream/18650CL"><here>here.</b>
 
 ### Required Components
 
