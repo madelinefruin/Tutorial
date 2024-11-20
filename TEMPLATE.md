@@ -49,7 +49,7 @@ List your required hardware components and the quantities here.
 |Resistors (47kΩ)|     2     |
 | 18650 Battery  |     1     |
 | Battery Holder |     1     |
-|  Breadboard    |     1     |
+|Mini Breadboard |     1     |
 | Jumper Cables  |     2     |
 
 
