@@ -107,6 +107,36 @@ about the technical skills
 
 Teach the contents of this section
 
+## Part 02: Writing the Code
+
+### Introduction
+
+In this section, we will be discussing the voltage divider and circuit setup. We will not be writing any code, so a computer is not needed yet.
+
+### Objective
+
+- To understand how to pick values for a voltage divider
+- How to properly connect the battery, resistors, and ESP32.
+
+### Background Information
+
+Give a brief explanation of the technical skills learned/needed
+in this challenge. There is no need to go into detail as a
+separation document should be prepared to explain more in depth
+about the technical skills
+
+### Components
+
+- Breadboard
+- Battery and Battery Holder
+- Resistors
+- ESP32
+- Jumper Cables
+
+### Instructional
+
+Teach the contents of this section
+
 ## Example
 
 ### Introduction
