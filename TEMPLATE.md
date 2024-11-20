@@ -125,6 +125,12 @@ about the technical skills
 
 Teach the contents of this section
 
+<pre><code class = "language-arduino"> const int batteryPin = 1;
+  const float referenceVoltage = 3.3;
+  const int resolution = 3950;
+  const float voltageDividerRatio = 2.0;
+</code></pre>
+
 ## Example
 
 ### Introduction
@@ -149,7 +155,7 @@ What about a 12V battery?
 
 We would not need to change the voltage divider for a 4.2V battery because 4.2V/2 is 2.1V, which is under the maximum that the board can take in. We would only need to change the code to the full charge and dead voltage values of the 4.2V battery.
 
-We would need to change the voltage divider for a 12V battery because 12V/2 is 6V, which is nearly double what the board can take in!
+We would need to change the voltage divider for a 12V battery because 12V/2 is 6V, which is nearly double what the board can take in! We could choose R1 = 300kΩ and R2 = 100kΩ to get 1/4 of 12V, or 3V. We would have to change our code for this, as well.
 
 ## Additional Resources
 
