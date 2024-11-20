@@ -82,6 +82,8 @@ A voltage divider is a passive linear circuit made up of two resistors, although
 
 We have given you two 47kΩ resistors, so the output voltage will be 3.7V * 47kΩ/(47kΩ + 47kΩ) = 1.85V. 
 
+Notice that our voltage divider halves the input voltage. To combat this division, we will need to remember to multiply our measured voltage by 2 (the reciprocal).
+
 ### Components
 
 - Breadboard
@@ -189,9 +191,9 @@ What about a 12V battery?
 
 ### Challenge Answers
 
-We would not need to change the voltage divider for a 4.2V battery because 4.2V/2 is 2.1V, which is under the maximum that the board can take in. We would only need to change the code to the full charge and dead voltage values of the 4.2V battery.
+We would not need to change the voltage divider for a 4.2V battery because 4.2V/2 is 2.1V, which is under the maximum that the board can take in. We would only need to change the minBatt and maxBatt values in the code.
 
-We would need to change the voltage divider for a 12V battery because 12V/2 is 6V, which is nearly double what the board can take in! We could choose R1 = 300kΩ and R2 = 100kΩ to get 1/4 of 12V, or 3V. We would have to change our code for this, as well.
+We would need to change the voltage divider for a 12V battery because 12V/2 is 6V, which is nearly double what the board can take in! We could choose R1 = 300kΩ and R2 = 100kΩ to get 1/4 of 12V, or 3V. We would have to change our maxBatt, minBatt, *and VoltageDividerRatio* in the code.
 
 ## Additional Resources
 
