@@ -69,15 +69,16 @@ List your required hardware components and the quantities here.
 
 Computer, Arduino IDE, Cable to connect ESP32 to your computer
 
-## Part 01: Name
+## Part 01: Setting up the Circuit
 
 ### Introduction
 
-Briefly introduce what  you are teaching in this section.
+In this section, we will be discussing the voltage divider and circuit setup. We will not be writing any code, so a computer is not needed yet.
 
 ### Objective
 
-- List the learning objectives of this section
+- To understand how to pick values for a voltage divider
+- How to properly connect the battery, resistors, and ESP32.
 
 ### Background Information
 
@@ -88,7 +89,11 @@ about the technical skills
 
 ### Components
 
-- List the components needed in this challenge
+- Breadboard
+- Battery and Battery Holder
+- Resistors
+- ESP32
+- Jumper Cables
 
 ### Instructional
 
