@@ -125,7 +125,8 @@ about the technical skills
 
 Teach the contents of this section
 
-<pre><code class = "language-arduino"> const int batteryPin = 1;
+<pre><code class = "language-C"> 
+  const int batteryPin = 1;
   const float referenceVoltage = 3.3;
   const int resolution = 3950;
   const float voltageDividerRatio = 2.0;
