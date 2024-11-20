@@ -125,19 +125,19 @@ about the technical skills
 
 Teach the contents of this section
 
-<pre><code class = "language-C"> //Constants
+<pre><code class = "language-css"> //Constants
   const int batteryPin = 1;
   const float referenceVoltage = 3.3;
   const int resolution = 3950;
   const float voltageDividerRatio = 2.0;
 </code></pre>
 
-<pre><code class = "language-C"> //Function to calculate battery voltage
+<pre><code class = "language-css"> //Function to calculate battery voltage
   float readBatteryVoltage() {
-  int rawADC = analogRead(batteryPin);
-  float voltageAtPin = (rawADC/(float)resolution) * referenceVoltage;
-  float batteryVoltage = voltageAtPin * voltageDividerRatio;
-  return batteryVoltage;
+    int rawADC = analogRead(batteryPin);
+    float voltageAtPin = (rawADC/(float)resolution) * referenceVoltage;
+    float batteryVoltage = voltageAtPin * voltageDividerRatio;
+    return batteryVoltage;
   }
 </code></pre>
 
