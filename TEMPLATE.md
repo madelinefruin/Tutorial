@@ -47,13 +47,17 @@ customize these for each workshop.
 
 You will receive an ESP32 board and USB-C to USB-C connector cable. The ESP32 is (INSERT BASIC DESCRIPTION HERE). We will be using it very simply, you do not need to understand everything it can do for this tutorial.
 
-We will be using the Arduino IDE. If you don't have it already, download it <a href="https://www.arduino.cc/en/software"><here>here. 
+We will be using the Arduino IDE.  
 
 ### Required Downloads and Installations
 
 List any required downloads and installations here.
 Make sure to include tutorials on how to install them.
 You can either make your own tutorials or include a link to them.
+
+If you don't have the Arduino IDE already, download it <a href="https://www.arduino.cc/en/software"><here>here.
+
+You will also need to install the Pangodream Arduino Library. This can be found in the lefthand bar of your Arduino IDE under add-ons. Or, you can download it <b href="https://github.com/pangodream/18650CL">here.
 
 ### Required Components
 
