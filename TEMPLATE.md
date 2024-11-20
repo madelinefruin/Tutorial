@@ -125,19 +125,43 @@ about the technical skills
 
 Teach the contents of this section
 
-<pre><code class = "language-css"> //Constants
+<pre><code class = "language-arduino"> //Constants
   const int batteryPin = 1;
   const float referenceVoltage = 3.3;
   const int resolution = 3950;
   const float voltageDividerRatio = 2.0;
 </code></pre>
 
-<pre><code class = "language-css"> //Function to calculate battery voltage
+<pre><code class = "language-arduino"> //Function to calculate battery voltage
   float readBatteryVoltage() {
     int rawADC = analogRead(batteryPin);
     float voltageAtPin = (rawADC/(float)resolution) * referenceVoltage;
     float batteryVoltage = voltageAtPin * voltageDividerRatio;
     return batteryVoltage;
+  }
+</code></pre>
+
+<pre><code class = "language-arduino"> //setup
+  void setup() {
+    Serial.begin(115200);
+    pinMode(batteryPin, INPUT);
+    Serial.println("Starting Battery Voltage Measurement...");
+  }
+</code></pre>
+
+<pre><code class = "language-C"> //loop
+  void loop() {
+    float batteryVoltage = readBatteryVoltage();
+    Serial.print("Battery Voltage: ");
+    Serial.print(batteryVoltage);
+    Serial.println(" V");
+
+    int battPercent = (batteryVoltage/4.2)*100;
+    Serial.print("Battery Percentage: ");
+    Serial.print(batteryPercent);
+    Serial.println(" %");
+
+    delay(1000);
   }
 </code></pre>
 
