@@ -212,4 +212,4 @@ We would need to change the voltage divider for a 12V battery because 12V/2 is 6
 
 ### Useful links
 
-List any sources you used, documentation, helpful examples, similar projects etc.
+<a href="https://www.monolithicpower.com/learning/resources/an-introduction-to-batteries-components-parameters-types-and-chargers"><here>Website that tells the nominal voltage and voltage range of many batteries.</a>
