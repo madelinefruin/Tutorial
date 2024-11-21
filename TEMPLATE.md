@@ -175,7 +175,7 @@ Teach the contents of this section
 
     int battPercent = ((batteryVoltage-minBatt)/(maxBatt-minBatt))*100;
     Serial.print("Battery Percentage: ");
-    Serial.print(batteryPercent);
+    Serial.print(battPercent);
     Serial.println(" %");
 
     delay(1000);
