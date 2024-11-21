@@ -4,7 +4,7 @@ date: 2024-11-20
 authors:
   - name: Andy Tu
   - name: Madeline Fruin
-  - name: Will Luong
+  - name: William Luong
 ---
 
 ![relevant graphic or workshop logo](image/path)
@@ -22,10 +22,22 @@ This tutorial will teach readers how to use ESP32's ADC pins to measure a batter
 
 ### Background Information
 
-Describe your topic here. What does it do? Why do you use it?
-Are there other similar things to use? What are the pros and cons?
-Explain important concepts that are necessary to understand.
-Include (and cite if needed) any visuals that will help the audience understand.
+A battery indicator circuit measures the state of charge (SoC) of a battery and visually outputs whether the battery’s capacity is low or full. These circuits are commonly used in battery management systems, smartphones, and other consumer electronics.
+
+Pros:
+1. Provides real-time feedback on battery life.
+2. Prevents damage to the battery by avoiding overcharging or over-discharging.
+3. Offers insights to maximize battery life and performance.
+
+Cons:
+
+1. The more complex the circuit, the higher the cost (e.g., precise resistors may be required).
+2. Limited accuracy, as voltage alone isn’t the only factor that determines the charge state.
+
+Key Concepts:
+1.Voltage Divider
+2. Resistor Ratios with Multiple Batteries
+3. Arduino Basics
 
 ## Getting Started
 
