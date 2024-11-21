@@ -181,16 +181,15 @@ Teach the contents of this section
   }
 </code></pre>
 
-## Example
+## Final Circuit Image
 
-### Introduction
 
 <img src="Final_circuit_Image.jpg"> </img>
 It should look like the image above
 
-### Example
+### Arduino Ouput
 
-Present the example here. Include visuals to help better understanding
+<img src="Arduino_output.png"> </img>
 
 ### Analysis
 
