@@ -149,11 +149,11 @@ Lets take a dive into the indvidual blocks of code.
   const float maxBatt = 4.2;
   const float minBatt = 3;
 </code></pre>
-- **batteryPin** is the analog pin connected to the voltage divider's output
-- **referenceVoltage** is the maximum voltage the ADC can read. (normally it's 3.3V for the ESP32)
-- **resolution** defines the ADC's bit resolution, which determines how anlog voltage is assigned to digital values
-- **voltageDividerRatio** the scaling factor of the voltage divider
-- **maxBatt** and **minBatt** defines the battery's voltage range. 
+- `batteryPin` is the analog pin connected to the voltage divider's output
+- `referenceVoltage` is the maximum voltage the ADC can read. (normally it's 3.3V for the ESP32)
+- `resolution` defines the ADC's bit resolution, which determines how anlog voltage is assigned to digital values
+- `voltageDividerRatio` the scaling factor of the voltage divider
+- `maxBatt` and `minBatt` defines the battery's voltage range. 
 
 <pre><code class = "language-arduino"> //Function to calculate battery voltage
   float readBatteryVoltage() {
@@ -165,11 +165,11 @@ Lets take a dive into the indvidual blocks of code.
 </code></pre>
 
 Fill out the code function that calculates the battery voltage
-- **analogRead** captures the raw ADC value corresponding to the voltage at the ESP32 pin
-- **voltageAtPin** using the provided code and understanding of the ADC conversion, write the line of code that calculates it.
+- `analogRead` captures the raw ADC value corresponding to the voltage at the ESP32 pin
+- `voltageAtPin` using the provided code and understanding of the ADC conversion, write the line of code that calculates it.
   - The ADC reading is a fraction of the max resolution
   - mulitply this fraction by the reference voltage
-- **batteryVoltage** After finding the voltageAtPin how can we find the actual battery voltage (Hint: remember the scaling factor)
+- `batteryVoltage` After finding the voltageAtPin how can we find the actual battery voltage (Hint: remember the scaling factor)
 
 <pre><code class = "language-arduino"> //setup
   void setup() {
@@ -178,8 +178,8 @@ Fill out the code function that calculates the battery voltage
   }
 </code></pre>
 
-- **Serial.begin(115200)** sets up communication with the serial monitor for real-time data output
-- **pinMode** This should configures the ADC pin as an input to read the voltage of the circuit
+- `Serial.begin(115200)` sets up communication with the serial monitor for real-time data output
+- `pinMode` This should configures the ADC pin as an input to read the voltage of the circuit
 
 <pre><code class = "language-C"> //loop
   void loop() {
@@ -197,10 +197,10 @@ Fill out the code function that calculates the battery voltage
   }
 </code></pre>
 - The loop continously monitors and outputs the battery's state:
-- **readBatteryVoltage()** gets the current battery voltage
-- **Serial.print** displays the voltage in the serial monitor
-- **battPercent** calculates the battery's percentage
-- **delay(10000)** pauses the loop for 10 seconds
+- `readBatteryVoltage()` gets the current battery voltage
+- `Serial.print` displays the voltage in the serial monitor
+- `battPercent` calculates the battery's percentage
+- `delay(10000)` pauses the loop for 10 seconds
 
 Overall this function should provide us with real-time battery status
 ## Final Circuit Image
