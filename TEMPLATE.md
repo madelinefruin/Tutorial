@@ -162,7 +162,6 @@ Teach the contents of this section
   void setup() {
     Serial.begin(115200);
     pinMode(batteryPin, INPUT);
-    Serial.println("Starting Battery Voltage Measurement...");
   }
 </code></pre>
 
@@ -178,7 +177,7 @@ Teach the contents of this section
     Serial.print(battPercent);
     Serial.println(" %");
 
-    delay(1000);
+    delay(10000);
   }
 </code></pre>
 
@@ -186,7 +185,8 @@ Teach the contents of this section
 
 ### Introduction
 
-Introduce the example that you are showing here.
+<img src="Final_circuit_Image.jpg"> </img>
+It should look like the image above
 
 ### Example
 
