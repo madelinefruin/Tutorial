@@ -36,7 +36,7 @@ Cons:
 
 Key Concepts:
 
-1.Voltage Divider
+1. Voltage Divider
 2. Resistor Ratios with Multiple Batteries
 3. Arduino Basics
 
