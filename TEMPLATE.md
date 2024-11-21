@@ -35,6 +35,7 @@ Cons:
 2. Limited accuracy, as voltage alone isn’t the only factor that determines the charge state.
 
 Key Concepts:
+
 1.Voltage Divider
 2. Resistor Ratios with Multiple Batteries
 3. Arduino Basics
