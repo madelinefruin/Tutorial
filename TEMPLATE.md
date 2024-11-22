@@ -75,7 +75,7 @@ Computer, Arduino IDE
 
 ### Introduction
 
-In this section, we will be discussing the voltage divider and circuit setup. We will not be writing any code, so a computer is not needed yet.
+In this section, we will be discussing the voltage divider and circuit setup. We will not be writing any code, so a computer is not yet needed.
 
 ### Objective
 
@@ -127,17 +127,18 @@ In this section, we will be discussing the code used to measure the battery's pe
 ### Background Information
 
 This section focuses on coding in the Arduino IDE. The language is very similar to C or C++. If you have any background knowledge in those languages, you will recognize the code and its formatting. If you don't have experience in C/C++, don't worry, we will be breaking down the code into very manageable chunks. 
+*Hint: If you don't want to rewrite all the code, use the copy button in the upper right corner of the code blocks!*
 
 ### Components
 
-- ESP32
+- ESP32 (with the circuit you just built attached)
 - USB-C to USB-C Connector cable for ESP32
 - Your Computer
 
 ### Instructional
 
-Another goal of the project is to integrate both hardware and software to create a simple battery indicator system using the ESP32 microcontroller
-Lets take a dive into the indvidual blocks of code. 
+Another goal of the project is to integrate both hardware and software to create a simple battery indicator system using the ESP32 microcontroller.
+Let's take a dive into the indvidual blocks of code. 
 
 <pre><code class = "language-arduino"> //Constants
   const int batteryPin = 1;
