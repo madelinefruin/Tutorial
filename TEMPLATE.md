@@ -42,7 +42,7 @@ Key Concepts:
 
 ## Getting Started
 
-You will receive an ESP32 board and USB-C to USB-C connector cable. The ESP32 is (INSERT BASIC DESCRIPTION HERE). We will be using it very simply, you do not need to understand everything it can do for this tutorial.
+You will receive an ESP32 board and USB-C to USB-C connector cable. The ESP32 board utilizes the ESP32 (obviously). The ESP32 is a system on a chip with Wifi and bluetooth capacbilities. This means that it can be used to make IoT projects(Internet of things). However, we will be using it very simply, you do not need to understand everything it can do for this tutorial.
 
 You will also receive a breadboard, jumper cables, and resistors. The rows of the breadboard are connected while the columns are not. The resistors and jumper cables should fit snuggly into the holes of the breadboard. 
 
@@ -59,6 +59,7 @@ List your required hardware components and the quantities here.
 | Component Name | Quanitity |
 | -------------- | --------- |
 |     ESP32      |     1     |
+| ESP32 Connector Cable | 1  |
 |Resistors (47kΩ)|     2     |
 | 18650 Battery  |     1     |
 | Battery Holder |     1     |
@@ -125,10 +126,7 @@ In this section, we will be discussing the code used to measure the battery's pe
 
 ### Background Information
 
-Give a brief explanation of the technical skills learned/needed
-in this challenge. There is no need to go into detail as a
-separation document should be prepared to explain more in depth
-about the technical skills
+This section focuses on coding in the Arduino IDE. The language is very similar to C or C++. If you have any background knowledge in those languages, you will recognize the code and its formatting. If you don't have experience in C/C++, don't worry, we will be breaking down the code into very manageable chunks. 
 
 ### Components
 
@@ -212,7 +210,7 @@ Circuit setup should look like the image above
 ### Arduino Ouput
 
 <img src="Arduino_output.png"> </img>
-Your Arduino output should print this several times(your voltage percentage may differ depending on battery.
+Your Arduino output should print this several times(your voltage percentage may differ depending on battery).
 ### Analysis
 
 The example uses an ESP32 and a voltage divider to measure a battery's state of charge. This circuit demostrates the core concepts like ADC functionality and Arduino coding. The voltage divder lowers the battery voltage(3.7V to 1.85V) to a safe level for the ESP32 to read. Once the circuit is connected on the breadboard and linked to the ESP32, the Arduino code will adjust for the voltage scaling to calculate and provide an ouput of both the actual voltage and charge percentage. You can see how this employs the concepts of circuit design and programming with the readBatteryVoltage function by converting ADC readings into functional voltage data. The serial monitor should output real-time voltage and it helps validate the system's accuracy. 
