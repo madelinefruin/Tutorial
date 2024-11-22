@@ -206,11 +206,13 @@ Overall this function should provide us with real-time battery status
 
 
 <img src="Final_circuit_Image.jpg" alt="Photo of real-life completed circuit"> </img>
+
 Circuit setup should look like the image above
 
 ### Arduino Ouput
 
 <img src="Arduino_output.png" alt="Sample Output"> </img>
+
 Your Arduino output should print this several times(your voltage percentage may differ depending on battery).
 ### Analysis
 
