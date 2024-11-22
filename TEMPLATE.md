@@ -163,12 +163,12 @@ Let's take a dive into the indvidual blocks of code.
   }
 </code></pre>
 
-Fill out the code function that calculates the battery voltage
-- `analogRead` captures the raw ADC value corresponding to the voltage at the ESP32 pin
+Fill out the code function that calculates the battery voltage.
+- `analogRead` captures the raw ADC value corresponding to the voltage at the ESP32 pin.
 - `voltageAtPin` using the provided code and understanding of the ADC conversion, write the line of code that calculates it.
-  - The ADC reading is a fraction of the max resolution
-  - mulitply this fraction by the reference voltage
-- `batteryVoltage` After finding the voltageAtPin how can we find the actual battery voltage (Hint: remember the scaling factor)
+  - The ADC reading is a fraction of the max resolution.
+  - mulitply this fraction by the reference voltage.
+- `batteryVoltage` After finding the voltageAtPin how can we find the actual battery voltage (Hint: remember the scaling factor).
 
 <pre><code class = "language-arduino"> //setup
   void setup() {
@@ -177,8 +177,8 @@ Fill out the code function that calculates the battery voltage
   }
 </code></pre>
 
-- `Serial.begin(115200)` sets up communication with the serial monitor for real-time data output
-- `pinMode` This should configures the ADC pin as an input to read the voltage of the circuit
+- `Serial.begin(115200)` sets up communication with the serial monitor for real-time data output.
+- `pinMode` This should configures the ADC pin as an input to read the voltage of the circuit.
 
 <pre><code class = "language-C"> //loop
   void loop() {
@@ -201,19 +201,19 @@ Fill out the code function that calculates the battery voltage
 - `battPercent` calculates the battery's percentage
 - `delay(10000)` pauses the loop for 10 seconds
 
-Overall this function should provide us with real-time battery status
+Overall this function should provide us with real-time battery status.
 ## Final Circuit Image
 
 
 <img src="Final_circuit_Image.jpg" alt="Photo of real-life completed circuit"> </img>
 
-Circuit setup should look like the image above
+Circuit setup should look similar to the image above.
 
 ### Arduino Ouput
 
 <img src="Arduino_output.png" alt="Sample Output"> </img>
 
-Your Arduino output should print this several times(your voltage percentage may differ depending on battery).
+Your Arduino output should print this several times (your voltage percentage may differ depending on battery).
 ### Analysis
 
 The example uses an ESP32 and a voltage divider to measure a battery's state of charge. This circuit demostrates the core concepts like ADC functionality and Arduino coding. The voltage divder lowers the battery voltage(3.7V to 1.85V) to a safe level for the ESP32 to read. Once the circuit is connected on the breadboard and linked to the ESP32, the Arduino code will adjust for the voltage scaling to calculate and provide an ouput of both the actual voltage and charge percentage. You can see how this employs the concepts of circuit design and programming with the readBatteryVoltage function by converting ADC readings into functional voltage data. The serial monitor should output real-time voltage and it helps validate the system's accuracy. 
